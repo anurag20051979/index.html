@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>keeping the footer at the bottom</title>
-    <link rel="stylesheet"href="style.css">
-</head>
+    <title>Animation world</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+            position: absolute;
+            animation-name: moving;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moving
+        {
+            0%{ background-color: brown; left: 0px; top: 0px;}
+            25%{background-color: blueviolet; left: 200px; top: 0px;}
+            50%{background-color: aqua; left: 200px; top: 200px;}
+            75%{background-color: greenyellow; left: 0px; top:200px;}
+            100%{background-color: black; left:0px; top:0px;}
+        }
+    </style>
 <body>
-    <header>
-        <h1>Mine webpage</h1>
-        <p>hope you will enjoy my world</p>
-    </header>
-    <main>
-        <article>
-            <h2>TITLE HEADING</h2>
-            <h3>Title description - Mar 10, 2023</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit sapiente officia magni obcaecati eaque perspiciatis cupiditate illum ipsa eos aspernatur est, debitis ad possimus ducimus esse molestiae minima voluptas?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore rerum commodi corporis voluptatem eum, enim earum, harum magni voluptatum sequi fuga! Quam eum est beatae aliquam hic voluptatem quo. Cumque?</p>
-        </article>
-    </main>
-    <footer>
-        <p>copyright &copy;<script>document.write(new date().getFullYear())</script>,coding journey</p>
-    </footer>
+    <div>
+        <h1>ANURAG</h1>
+    </div>
+    
 </body>
 </html>
